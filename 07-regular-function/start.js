@@ -8,3 +8,10 @@
  *
  * 4. Вызовите функцию
  */
+
+function name (name) {
+	console.log(name);
+}
+
+name('Den')
+

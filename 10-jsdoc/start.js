@@ -12,3 +12,11 @@
  *
  * 4. Вызовите функцию
  */
+
+let fu = (a,b) => {
+	c = a - b;
+	return c;
+}
+
+let sum = fu(5,3);
+console.log(sum)

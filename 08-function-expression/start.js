@@ -10,3 +10,11 @@
  *
  * 5. Результат вызовов функции выведите в консоль
  */
+
+let hiName = function(name){
+	console.log("HI " + name);
+	return name;
+}
+
+hiName("den");
+hiName("oleg")

@@ -10,3 +10,9 @@
  *
  * 3. Выведите значение последней переменной в консоль
  */
+
+let name = 'Den';
+let surmane = 'Kladko';
+let work = 'student';
+let towgether = name + " " + surmane + ' im ' + work;
+console.log(towgether);

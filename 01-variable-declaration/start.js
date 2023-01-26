@@ -7,3 +7,6 @@
  *
  * 3. Выведите значение переменной в консоль
  */
+
+let myCountry = 'UA';
+console.log(myCountry);

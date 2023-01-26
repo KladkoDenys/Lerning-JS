@@ -10,3 +10,7 @@
  *
  * 5. Перепишите функцию так, чтобы результат возвращался неявно
  */
+
+let helloWorld = () => 'hello world'
+
+console.log(helloWorld())
