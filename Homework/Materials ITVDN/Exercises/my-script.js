@@ -87,13 +87,127 @@
 // sumPositivnumber(5,5)
 // -----------------------------------------------------------
 
-switch(Выражение){
-	case A: 
-		// Действие если Выражение === А
-		break
-	case B: 
-		// Действие если Выражение === B
-		break
-	default
-	// Действие по умолчанию
-}
+// switch(Выражение){
+// 	case A: 
+// 		// Действие если Выражение === А
+// 		break
+// 	case B: 
+// 		// Действие если Выражение === B
+// 		break
+// 	default
+// 	// Действие по умолчанию
+// }
+// ---------------------------------
+
+// let ifConstr = (a) => {
+// 	if(a > 0){
+// 		console.log(` A > 0`);
+// 	}
+// 	if(a < 0){
+// 		console.log(` A < 0`);
+// 	}
+// 	if(a === 0){
+// 		console.log(` A = 0`);
+// 	}
+// 	return a;
+// }
+
+// ifConstr(4);
+// ifConstr(-5);
+// ifConstr(0)
+
+// ---------------------------------
+
+      //   let V;
+      //   const Pi = 3.1415926535; 
+      //   let r = 7
+      //   let h = 8
+
+		// 	let cilynderVolume = () =>{
+		// 		if(r === 0 || h ===0 || !isNaN(r) || !isNaN(h)){
+		// 			console.log("errorr")
+		// 		}
+		// 	return V = Pi * r * r * h;
+		// 	}
+		// 	cilynderVolume()
+
+		// 	console.log(`Объем цилиндра с высотой ${h} и радиусом ${r} = ${V}`);
+
+		// ------------------------------------------------------------
+		// if(value == 1)
+		// {
+		// 	 alert("Вы ввели число 1");
+		// }
+		// else if(value == 2)
+		// {
+		// 	 alert("Вы ввели число 2");
+		// }
+		// else 
+		// {
+		// 	 alert("Вы ввели неправильное значение");
+		// }
+		// let value = 2;
+
+		// switch(value){
+		// 	case 1:
+		// 		console.log("Вы ввели число 1");
+		// 		break;
+		// 	case 2:
+		// 		console.log("Вы ввели число 2");
+		// 		break;
+		// 	default:
+		// 		console.log("Вы ввели число esle");
+		// 		break;
+		// }
+		// ---------------------
+
+
+		// let result;
+
+		// let season = (months) => {
+		// 	if(isNaN(months)){
+		// 		return console.log(`not a Number`);
+		// 	}
+
+		// 	if(months == 1 || months == 2 || months == 12){
+		// 		return console.log(`winter`);
+		// 	}
+
+		// 	if(months >=3 && months <=5){
+		// 		return console.log(`spring`);
+		// 	}
+
+		// 	if(months >=6 && months <=8){
+		// 		return console.log(`summer`);
+		// 	}
+
+		// 	if(months >=9 && months <11){
+		// 		return console.log(`fall`);
+		// 	}
+
+		// 	return console.log(`no 1-12`);
+		// }
+		// season('1')
+		// season('5')
+		// season('7')
+		// season('9')
+		// season('15')
+		// season('dfdf')
+		// season(2,15)
+
+		// -------------------------
+
+		// let country = 'Franc';
+
+		// if(country == 'Great Britain' || country == 'USA'){
+		// 	console.log("Английский язык");
+		// }else if(country == 'Germany'){
+		// 	console.log("Немецкий язык");
+		// }else if(country == 'France'){
+		// 	console.log("France язык");
+		// }else{
+		// 	console.log("Указанной страны нет в списке")
+		// }
+
+		// -----------------------------------------------------
+		
