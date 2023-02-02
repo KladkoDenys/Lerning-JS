@@ -12,3 +12,17 @@
  *
  * 4. Вызовите функцию
  */
+
+
+/**
+ * klklkl
+ * @param {Number} a 
+ * @param {Number} b 
+ * @returns {Number} wwdwd
+ */
+let resolt = (a, b) => {
+	return c = a - b
+}
+
+resolt(4,5)
+

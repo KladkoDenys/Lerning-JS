@@ -10,3 +10,9 @@
  *
  * 5. Результат вызовов функции выведите в консоль
  */
+
+let hiNname = function (name) {
+  return `Hi, ${name}`;
+};
+
+console.log(hiNname("den"));

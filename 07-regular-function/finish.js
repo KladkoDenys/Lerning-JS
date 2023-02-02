@@ -8,3 +8,14 @@
  *
  * 4. Вызовите функцию
  */
+
+let myName = function() {
+	console.log('Den');
+}
+myName();
+
+function myNameRepeat() {
+	console.log('Den');
+}
+
+myNameRepeat();

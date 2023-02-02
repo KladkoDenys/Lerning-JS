@@ -10,3 +10,8 @@
  *
  * 5. Перепишите функцию так, чтобы результат возвращался неявно
  */
+
+let arrowFunction = () => `Hellow world!`
+
+
+console.log(arrowFunction())

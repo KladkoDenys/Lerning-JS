@@ -10,3 +10,11 @@
  *
  * 3. Выведите значение последней переменной в консоль
  */
+
+const myName = 'Den'
+const mySurname = 'Kladko'
+const myProfession = 'student'
+
+const stringValuee = `my name ${myName} ${mySurname}, and im ${myProfession}`
+
+console.log(stringValuee)
