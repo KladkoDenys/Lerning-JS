@@ -4,3 +4,7 @@
  *
  * 2. Виведите в консоль длину этой строки
  */
+
+let stringValue = 'My name is'
+
+console.log(stringValue.length)

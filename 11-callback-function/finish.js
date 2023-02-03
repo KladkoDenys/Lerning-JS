@@ -4,3 +4,15 @@
  *
  * 2. Используйте стрелочную функцию
  */
+
+// let textHello = 'Hello, world!'
+
+// function message (gfg)  { 
+// 	return console.log(gfg)
+// }
+
+// console.log(message(textHello))
+
+setTimeout(() => console.log(textHello), 1000)
+
+// setTimeout( message(gfg), 1000)
