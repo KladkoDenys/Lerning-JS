@@ -6,3 +6,10 @@
  *
  * 3. Выведите в консоль длину массива
  */
+
+
+let myArrey= [1, 'Den', true]
+
+console.log(myArrey[0])
+
+console.log(myArrey.length)

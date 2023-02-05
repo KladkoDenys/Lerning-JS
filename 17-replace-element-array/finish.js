@@ -8,3 +8,12 @@
  *
  * 4. Выведите в консоль измененный массив
  */
+
+let myArray = [ 1, true , 'Den']
+
+console.log(myArray)
+
+myArray[1] = false
+
+console.log(myArray)
+

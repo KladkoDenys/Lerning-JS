@@ -9,9 +9,23 @@
 let myVariable1 = 10
 let myVariable2 = '5'
 
-// Напишите код здесь
+// let myFn = (a,b) => {
+// 	let aNum = parseInt(a)
+// 	let bNum = parseInt(b)
+// 	if( aNum <= bNum){
+// 		return true
+// 	}
+// 	return false
+// }
 
-myVariable1 = '20'
+let a = parseInt(myVariable1) <= parseInt(myVariable2)
+
+console.log(a)
+// console.log(myFn(myVariable1,myVariable2))
+
+myVariable1 = 'frf'
 myVariable2 = 100
 
-// Напишите код здесь
+console.log( parseInt(myVariable1) <= parseInt(myVariable2) )
+
+// console.log(myFn(myVariable1,myVariable2))
