@@ -6,12 +6,12 @@
  *  - выражение-инструкция (expression statement)
  */
 
-15
+15 //--> expression
 
 const myObject = {
   x: 10,
   y: true,
-}
+} //--> expression statement
 
 myObject.z = 'abc'
 

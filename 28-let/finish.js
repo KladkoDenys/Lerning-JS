@@ -8,7 +8,7 @@ const myFavoriteAnimal = 'Monkey'
 console.log(myFavoriteAnimal)
 // 'Monkey'
 
-const myFavoriteAnimal = 'Cat'
+const myFavoriteAnimal2 = 'Cat'
 
-console.log(myFavoriteAnimal)
+console.log(myFavoriteAnimal2)
 // 'Cat'
