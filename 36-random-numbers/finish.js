@@ -13,13 +13,42 @@
  *  - для генерации случайного числа в заданном диапазоне
  *  - для добавления случайного числа в массив с возвратом измененного массива
  */
-
+"use strict"
 const MIN = 1000
 const MAX = 9999
 
 const myNumbers = [2355, 7235, 8135, 1762, 2361, 8351]
 
+const myNumbersTest = [2, 3, 4, 5, 6, 7]
 
-function getRandom(min, max) { 
-	return Math.floor(Math.random() * (max - min +1 )) + min)
+
+
+
+const getRandom = (min, max) =>{ 
+	return Math.floor(Math.random() * (max - min +1 ) + min)
 }
+
+// const addNewNumber = () =>{
+// 	let randomNumber = getRandom(MIN,MAX);
+// 	myNumbers.forEach((el) =>{
+// 		if (el === randomNumber){
+// 			randomNumber = getRandom(MIN,MAX);
+// 		}
+// 	})
+// 	return myNumbers.push(randomNumber)
+// }
+
+const addNewNumber = () =>{
+	let randomNumber = getRandom(MIN,MAX);
+	myNumbers.forEach(el =>{
+		do{
+			
+		}
+	})
+}
+
+
+addNewNumber()
+
+console.log(myNumbers)
+
