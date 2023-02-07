@@ -12,3 +12,12 @@
  * "Сообщение номер 4"
  * "Сообщение номер 5"
  */
+'use strict';
+
+let i = 1;
+
+let timer = setInterval(() => console.log(`Massage ${i++}`), 2000);
+
+setTimeout(() => { clearInterval(timer); },11000)
+
+
