@@ -13,42 +13,34 @@
  *  - для генерации случайного числа в заданном диапазоне
  *  - для добавления случайного числа в массив с возвратом измененного массива
  */
-"use strict"
-const MIN = 1000
-const MAX = 9999
 
-const myNumbers = [2355, 7235, 8135, 1762, 2361, 8351]
+"use strict";
 
-const myNumbersTest = [2, 3, 4, 5, 6, 7]
+const MIN = 1000;
+const MAX = 9999;
 
+// const myNumbers = [2355, 7235, 8135, 1762, 2361, 8351]
 
+const myNumbers = [2, 3, 4, 5, 6, 7];
 
+const getRandom = (min, max) => {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+};
 
-const getRandom = (min, max) =>{ 
-	return Math.floor(Math.random() * (max - min +1 ) + min)
-}
+const addNewNumber = (arr, min, max) => {
+	let newArray = [...arr]
+	let randomNumber
+	do {
+		randomNumber = getRandom(min, max);
+		console.log(randomNumber)
+	} while (newArray.includes(randomNumber));
+	
+	newArray.push(randomNumber)
 
-// const addNewNumber = () =>{
-// 	let randomNumber = getRandom(MIN,MAX);
-// 	myNumbers.forEach((el) =>{
-// 		if (el === randomNumber){
-// 			randomNumber = getRandom(MIN,MAX);
-// 		}
-// 	})
-// 	return myNumbers.push(randomNumber)
-// }
+	return newArray
+};
 
-const addNewNumber = () =>{
-	let randomNumber = getRandom(MIN,MAX);
-	myNumbers.forEach(el =>{
-		do{
-			
-		}
-	})
-}
+const newArray = addNewNumber(myNumbers, 1, 8)
 
-
-addNewNumber()
-
-console.log(myNumbers)
-
+console.log(myNumbers);
+console.log(newArray);
