@@ -16,6 +16,22 @@ const b = [4, 10, 14, 25, 25, 50]
 const c = [150, 132, 80, 40]
 const d = [15, 26, 10, 23, 85]
 
+let arraySortInfo = (array)=>{
+	let b
+	array.every((el,index)=>{
+		if(typeof el != 'number'){
+			return b ="Некоторые элементы не являются числами"
+		}else if(el[index] > el[index +1]){
+			return b = "Массив отсортирован по возрастанию"
+		}else if(el[index] < el[index +1]){
+			return b = "Массив отсортирован по убыванию"
+		}else{
+			return b = "Массив не отсортирован"
+		}
+	})
+	return b
+}
+
 console.log(arraySortInfo(a)) // Некоторые элементы не являются числами
 console.log(arraySortInfo(b)) // Массив отсортирован по возрастанию
 console.log(arraySortInfo(c)) // Массив отсортирован по убыванию

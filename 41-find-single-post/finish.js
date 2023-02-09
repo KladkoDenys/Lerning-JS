@@ -18,6 +18,15 @@ const posts = [
   { postId: 6134, commentsQuantity: 2 },
 ]
 
+let findPostById = (id, arr) => {
+  let findPost;
+  arr.forEach((element) => {
+    if(element.postId === id)
+      findPost = element
+  });
+  return findPost
+}
+
 console.log(findPostById(6134, posts)) // { postId: 6134, commentsQuantity: 2 }
 
 console.log(findPostById(4511, posts)) // undefined
