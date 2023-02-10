@@ -24,3 +24,12 @@ show();
 const nameColor = 'color';
 myCity[nameColor] ='red';
 show();
+
+// let findPostById = (id, arr) => {
+// 	let findPost;
+// 	arr.forEach((element) => {
+// 	  if(element.postId === id)
+// 		 findPost = element
+// 	});
+// 	return findPost
+//  }
