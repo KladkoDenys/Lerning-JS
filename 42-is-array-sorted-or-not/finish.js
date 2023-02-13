@@ -16,17 +16,33 @@ const b = [4, 10, 14, 25, 25, 50]
 const c = [150, 132, 80, 40]
 const d = [15, 26, 10, 23, 85]
 
-const arraySortInfo = (inputArray) =>{
-	if(inputArray.some(el => typeof el !== 'number')){
-		return 'Некоторые элементы не являются числами'
+// console.log(d.sort((a,b)=> a - b))
+
+let arraySortInfo = (arr) =>{
+	if(arr.some(el => typeof el !== 'number')){
+		console.log(arr)
+		return "Некоторые элементы не являются числами"
 	}
 
-	if(inputArray.foreach((el,index)=>{
-		
-	})){return 'Массив отсортирован по возрастанию'}
 
-	return console.log('False')
+	if(JSON.stringify(arr) === JSON.stringify(arr.sort((a,b)=>a-b))){
+		console.log(arr)
+		console.log(JSON.stringify(arr.sort((a,b)=>a+b)))
+		return "Массив отсортирован по возрастанию"
+	}
+
+	if(JSON.stringify(arr) === JSON.stringify(arr.sort((b,a)=>b-a))){
+		console.log(arr)
+		console.log(JSON.stringify(arr.sort((a,b)=>b-a)))
+		return "Массив отсортирован по убыванию"
+	}
+
+
+	console.log(JSON.stringify(arr.sort((a,b)=>b-a)))
+	console.log(arr)
+	return"Массив не отсортирован"
 }
+
 
 console.log(arraySortInfo(a)) // Некоторые элементы не являются числами
 console.log(arraySortInfo(b)) // Массив отсортирован по возрастанию
@@ -53,3 +69,24 @@ console.log(arraySortInfo(d)) // Массив не отсортирован
  * Подсказка 2: Вы должны использовать два параметра в колбэк функции "element", "index"
  * Подсказка 3: Каждый элемент массива, кроме первого, следует сравнивать с предыдущим
  */
+
+// const arraySortInfo = (inputArray) =>{
+// 	if(inputArray.some(el => typeof el !== 'number')){
+// 		return "Некоторые элементы не являются числами"
+// 	}
+
+// 	if(inputArray.every((el,index) => index > 0 
+// 	? el >= inputArray[index -1]
+// 	: true)){
+// 		return "Массив отсортирован по возрастанию"
+// 	}
+
+// 	if(inputArray.every((el,index)=>index > 0 
+// 	? el <= inputArray[index -1]
+// 	: true
+// 	)){
+// 		return "Массив отсортирован по убыванию"
+// 	}
+
+// 	return 'Array is not sorted'
+// }
