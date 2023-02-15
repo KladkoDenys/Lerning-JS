@@ -75,12 +75,31 @@ console.log(arraySortInfo(d)) // Массив не отсортирован
 // 		return "Некоторые элементы не являются числами"
 // 	}
 
-// 	if(inputArray.every((el,index) => index > 0 
+// 	if(inputArray.every((el,index) => index > 0
 // 	? el >= inputArray[index -1]
 // 	: true)){
 // 		return "Массив отсортирован по возрастанию"
 // 	}
 
+// 	if(inputArray.every((el,index)=>index > 0
+// 	? el <= inputArray[index -1]
+// 	: true
+// 	)){
+// 		return "Массив отсортирован по убыванию"
+// 	}
+
+// 	return 'Array is not sorted'
+// }
+
+// 	if(inputArray.every((el,index)=>index > 0 
+// 	? el <= inputArray[index -1]
+// 	: true
+// 	)){
+// 		return "Массив отсортирован по убыванию"
+// 	}
+
+// 	return 'Array is not sorted'
+// }
 // 	if(inputArray.every((el,index)=>index > 0 
 // 	? el <= inputArray[index -1]
 // 	: true
