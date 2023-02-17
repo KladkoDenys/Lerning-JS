@@ -7,6 +7,7 @@
  * равными сумме всех количеств в каждой категории
  */
 
+
 const inputProducts = [
   {
     title: 'Phone case',
