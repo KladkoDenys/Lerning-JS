@@ -11,6 +11,33 @@
  * 5. Если массив не отсортирован - вернуть "Массив не отсортирован"\
  * 6.Вирішити завдання методом sort
  */
+'use strict'
+
+
+
+const arraySortInfo=(inputArray) =>{
+
+	let sortUp = inputArray
+	let sortDown = inputArray
+	console.log(sortUp)
+	console.log(sortDown)
+
+	console.log(sortDown.sort((a,b) => b-a))
+
+	if(inputArray.some(el => typeof el !== 'number')){
+		return `some element not a number `
+	}
+	
+	if( JSON.stringify(inputArray) === JSON.stringify(sortUp.sort((a,b) => a-b))){
+		return "Массив отсортирован по возрастанию"
+	}
+
+	if( JSON.stringify(inputArray) === JSON.stringify(sortDown.sort((a,b) => b-a))){
+		return "Массив отсортирован по убыванию"
+	}
+
+	return 'Массив не отсортирован'
+}
 
 
 

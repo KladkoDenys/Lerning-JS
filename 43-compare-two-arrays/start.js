@@ -10,6 +10,11 @@
  *
  * ВАЖНО: Исходите из того, что массивы содержат элементы примитивных типов
  */
+'use strict'
+
+const areArraysEqual = (firstArray,secondArray) =>{
+	return JSON.stringify(firstArray) === JSON.stringify(secondArray)
+}
 
 const a = [1, 2, 3]
 const b = [1, 2, 3]

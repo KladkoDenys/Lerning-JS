@@ -11,11 +11,6 @@
 
 'use strict';
 
-const isElementInArray = (searchElement, inputArray) => {
-  if (typeof searchElement !== 'object') {
-    return inputArray.includes(searchElement)
-  }
-}
 
 const tags = [
   ['javascript', 'es6'],

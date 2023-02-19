@@ -3,18 +3,18 @@
  * 1. Создайте функцию "pushIfUnique" с двумя параметрами "inputArray" и "newElement"
  *
  * 2. Если "inputArray" уже содержит "newElement",
- * выведите в консоль "{newElement} уже находится в массиве"
+ * выведите в консоль "c"
  *
  * 3. В противном случае добавьте "newElement" в "inputArray"
  *
  * ПРИМЕЧАНИЕ: Мы предполагаем, что "inputArray" содержит элементы только примитивных типов
  */
 
-const pushIfUnique = (inputArray, newElement) => {
-	if (inputArray.includes(newElement)) {
-		return console.log(`${newElement} уже находится в массиве`)
+const pushIfUnique = (inputArray,newElement) =>{
+	if(inputArray.includes(newElement)){
+		return console.log(`${newElement} is already in arrray`)
 	}
-
+	
 	return inputArray.push(newElement)
 }
 
