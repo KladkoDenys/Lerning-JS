@@ -7,6 +7,18 @@
  * равными сумме всех количеств в каждой категории
  */
 
+const quantitiesByCategories = (products) => {
+
+  let newObject ={};
+
+  products.reduce((prev,tek) =>{
+    if( prev.category != tek.category){
+      newObject[tek.category] = tek.quantity}else{newObject}
+})
+
+  return newObject
+}
+
 
 const inputProducts = [
   {
