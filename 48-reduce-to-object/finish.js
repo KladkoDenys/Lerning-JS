@@ -7,10 +7,6 @@
  * равными сумме всех количеств в каждой категории
  */
 
-const quantitiesByCategories = (products) => { 
-  products.reduce((acc, product) =>
-  ,{})
-}
 
 const inputProducts = [
   {
