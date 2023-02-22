@@ -26,17 +26,45 @@
 
 
 let randomArray = (arrayQuantity, min, max) => {
-  
   let generatedArray = []
-  
   for (let i = 0; i < arrayQuantity; i++) {
     generatedArray.push(Math.floor(Math.random() * (max - min) + min))
   }
-   
   return generatedArray;
 } 
 
-let arrayLeson1 = randomArray(8, 1, 10);
+// --------------leson1 ----
+// let arrayLeson1 = randomArray(8, 1, 10);
 
+// console.log(arrayLeson1)
 
-console.log(arrayLeson1);
+// const newArreyLeson1= []
+// arrayLeson1.forEach( el => newArreyLeson1.push(Math.pow(el, 2)) );
+
+// console.log(`newArreyLeson1 - ${newArreyLeson1}`)
+
+// ----------------------LEson 2--
+
+// let arrayLeson2 = randomArray(4, 1, 5);
+// console.log(arrayLeson2)
+
+// let sum = 0; 
+// arrayLeson2.forEach(el => sum = el + sum)
+
+// console.log(sum)
+
+// ----------------------Leson 3-------------
+
+// let arrayLeson3 = randomArray(4, 1, 5);
+// console.log(arrayLeson3)
+
+// let newArrey = arrayLeson3.map(el => Math.pow(el,2))
+// console.log(newArrey)
+
+// ----------------------Leson 4-------------
+
+let arrayLeson3 = randomArray(4, -1, 5);
+console.log(arrayLeson3)
+
+console.log(arrayLeson3.every(el => el > 0) )
+console.log(arrayLeson3.some(el => el < 0) )
