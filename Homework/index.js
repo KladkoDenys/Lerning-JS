@@ -111,10 +111,69 @@ let randomArray = (arrayQuantity, min, max) => {
 
 // Дан массив, в нем могут быть обычные элементы и подмассивы, например [1, 2, [3, 4], 5, [6, 7]]. Оставьте в нем только подмассивы.
 
-let arr = [1, 'string', [3, 4], 5, [6, 7]];
+// let arr = [1, 'string', [3, 4], 5, [6, 7]];
 
-let fun = (aray) => { 
-  return aray.filter(el => aray.isArray(el))
+// let newArr = []
+
+// let fun = (aray) => { 
+//   newArr = aray.filter(el => Array.isArray(el))
+//   return newArr
+// };
+
+// console.log(fun(arr))
+
+// ----------------Leson 10
+// Дан массив с числами. Посчитайте количество отрицательных чисел в этом массиве.
+
+// let arrayLeson10 = randomArray(10, -10, 10);
+// console.log(arrayLeson10)
+
+// let newArr =[]
+
+// let func =(arr) => {
+
+// newArr = arr.filter(el => el < 0) 
+
+//   return newArr.length
+// }
+
+// console.log(func(arrayLeson10))
+
+// / ----------------Leson 11
+// Дан массив с числами. Найдите сумму этих чисел
+
+// let arrayLeson11 = randomArray(3, 0, 5);
+// console.log(arrayLeson11)
+
+// console.log(arrayLeson11.reduce((acc,el) => acc + el))
+
+// / ----------------Leson 12
+// Дан массив с числами. Найдите сумму первых N элементов до первого нуля. Пример: [1, 2, 3, 0, 4, 5, 6] - суммируем первые 3 элемента, так как дальше стоит элемент с числом 0.
+
+let arrayLeson12 = [ 2, 1, 0, 2, 2,0,2,2 ]
+let mySum =0;
+
+let fun = (arr) => {
+  arr.reduce((sum,el) => {
+    if(el == 0){
+      return mySum = sum
+    }else { sum + el}
+  })
+  return mySum
 }
 
-console.log(fun(arr));
+
+console.log(fun(arrayLeson12))
+// ----
+
+// let arr = [1, 2, 5, 0, 4, 5, 6,];
+
+// const sum = arr.reduce((acc, amount) => {
+//   if (amount == 0)
+//     acc.skip = true;
+//   if (!acc.skip)
+//     acc.total += amount;
+//   return acc;
+// }, { skip: false, total: 0 }).total; 
+
+// console.log(sum);
