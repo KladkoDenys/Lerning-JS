@@ -6,7 +6,23 @@
  * равными категориям, и значениями,
  * равными сумме всех количеств в каждой категории
  */
+// const = costomName = 'New Key'
+// const   myObject = { [costomName] : 10 }
 
+const quantitiesByCategories = (products) =>{
+  return products.reduce((acc,tek)=>{
+    const {category,quantity} = tek
+    acc[category] = (acc[category] || 0) + quantity
+    return acc
+  }
+    ,{})
+}
+
+// const userProfile = {
+//   name : 'Den',
+//   age : 23     }
+// const {name,age} = userProfile;
+// console.log(name,age);
 
 const inputProducts = [
   {

@@ -150,20 +150,20 @@ let randomArray = (arrayQuantity, min, max) => {
 // / ----------------Leson 12
 // Дан массив с числами. Найдите сумму первых N элементов до первого нуля. Пример: [1, 2, 3, 0, 4, 5, 6] - суммируем первые 3 элемента, так как дальше стоит элемент с числом 0.
 
-let arrayLeson12 = [ 2, 1, 0, 2, 2,0,2,2 ]
-let mySum =0;
+// let arrayLeson12 = [ 2, 1, 0, 2, 2,0,2,2 ]
+// let mySum =0;
 
-let fun = (arr) => {
-  arr.reduce((sum,el) => {
-    if(el == 0){
-      return mySum = sum
-    }else { sum + el}
-  })
-  return mySum
-}
+// let fun = (arr) => {
+//   arr.reduce((sum,el) => {
+//     if(el == 0){
+//       return mySum = sum
+//     }else { sum + el}
+//   })
+//   return mySum
+// }
 
 
-console.log(fun(arrayLeson12))
+// console.log(fun(arrayLeson12))
 // ----
 
 // let arr = [1, 2, 5, 0, 4, 5, 6,];

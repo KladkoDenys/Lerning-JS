@@ -8,13 +8,16 @@
 
 'use strict'
 
-// const popularPostsIds = (posts,minimalComentsQty)=>{
-//   return posts.reduce((akk,idPost) => idPost.comments >= minimalComentsQty 
-//   ? akk.concat([idPost.postId])
-//   : akk.postId
-//     ,[]
-//   )
-// }
+const popularPostsIds = (posts,minimalComentsQty) => {
+  return posts.reduce((acc,tek) => {
+    if(minimalComentsQty < tek.comments){
+      acc.push(tek.postId)
+    }else{acc}
+    return acc
+  }
+  ,[])
+}
+
 
 
 const inputPosts = [
@@ -42,6 +45,18 @@ console.log(popularPostsIds(inputPosts, 15)); // [3421]
 console.log(popularPostsIds(inputPosts, 50)); // []
 
 
+
+// ------------
+// const popularPostsIds = (posts,minimalComentsQty)=>{
+//   return posts.reduce((akk,idPost) => idPost.comments >= minimalComentsQty 
+//   ? akk.concat([idPost.postId])
+//   : akk.postId
+//     ,[]
+//   )
+// }
+
+
+// -------------
 // const popularPostsIds = (posts, minimalComentsQty) => {
 //   return posts.reduce((postsIds, post) =>
 //     post.comments >= minimalComentsQty ? postsIds.concat([post.postId]) : postsIds,[]
