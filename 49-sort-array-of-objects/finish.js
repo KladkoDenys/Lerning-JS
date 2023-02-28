@@ -9,7 +9,10 @@
  * 3. Оригинальный массив должен остаться без изменений
  */
 
-
+const sortProductsByPrice = (products) => {
+  let newArray = products.map(el => el)
+  return newArray.sort((a, b) => a.price - b.price)
+}
 
 const inputProducts = [
   {

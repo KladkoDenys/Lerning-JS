@@ -36,6 +36,7 @@ const inputProducts = [
   },
 ]
 
+
 const sortProductsByPrice = (products) =>
   [...products].sort((a, b) => a.price - b.price)
 

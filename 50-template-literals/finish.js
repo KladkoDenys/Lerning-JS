@@ -7,6 +7,20 @@
  * 3. Ниже приведены примеры вызовов функции.
  */
 
+const templateLiteral = (num) => {
+	let moreTen = 'больше'
+	let lessTen = 'меньше'
+	let numberSqrt = Math.sqrt(num, 2)
+	let lessOrMore
+	if (num > 10) {
+		lessOrMore = moreTen
+	} else {
+		lessOrMore = lessTen
+	}
+
+	return	`Число ${num}.` + `Это число ${lessOrMore} 10.` + `Квадратный корень этого числа - ${numberSqrt}.`
+}
+
 // ТЕСТ 1
 const myNumber = 9
 console.log(templateLiteral(myNumber))
