@@ -5,9 +5,6 @@
  * 2. Объект, возвращаемый функцией "personInfo", должен содержать только сокращенные имена свойств
  */
 
-const personInfo = (/* parameters */) => {
-  /* return ... */
-}
 
 const person = {
   name: 'Alice',
