@@ -19,3 +19,21 @@
  * в классе "CustomArray" также будет "push" вместо "customPush"?
  * Попробуйте это.
  */
+
+class CustomArray extends Array {
+	customPush(newElement){
+		this[this.length] = newElement
+		return this.length
+	}
+}
+
+myPush1 = new CustomArray(1,2,3,1,7,5,7);
+console.log(myPush1)
+console.log(myPush1.customPush(89))
+console.log(myPush1)
+console.log(myPush1.customPush(79))
+console.log(myPush1)
+console.log(myPush1.customPush(69))
+console.log(myPush1)
+console.log(myPush1.push(55))
+console.log(myPush1)

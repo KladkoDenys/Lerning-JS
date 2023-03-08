@@ -17,7 +17,9 @@ let person = {
   cartId: 435,
 }
 
+
 console.log(person)
+
 /*
 {
   index: 4,

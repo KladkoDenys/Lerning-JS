@@ -15,6 +15,7 @@ const person = {
   },
 }
 
+
 const result = personInfo(person)
 
 console.log(result)
