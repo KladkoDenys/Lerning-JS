@@ -11,6 +11,6 @@ function firstFunction(a, b) {
   return a + b
 }
 
-const secondFunction = function (a, b) {
+const secondFunction =  (a, b) => {
   return a + b
 }

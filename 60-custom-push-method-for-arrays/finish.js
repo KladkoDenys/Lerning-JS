@@ -23,17 +23,15 @@
 class CustomArray extends Array {
 	customPush(newElement){
 		this[this.length] = newElement
-		return this.length
+		return `Новый элемент ${newElement} был только что добавлен в массив`
 	}
 }
 
-myPush1 = new CustomArray(1,2,3,1,7,5,7);
-console.log(myPush1)
-console.log(myPush1.customPush(89))
-console.log(myPush1)
-console.log(myPush1.customPush(79))
-console.log(myPush1)
-console.log(myPush1.customPush(69))
-console.log(myPush1)
-console.log(myPush1.push(55))
-console.log(myPush1)
+const myCustomArray = new CustomArray(10, 3, 7, 5)
+console.log(myCustomArray.customPush(25))
+
+console.log(myCustomArray)
+
+myCustomArray.push(30)
+
+console.log(myCustomArray)

@@ -8,11 +8,16 @@
  * 3. Также верните эту сумму как результат функции
  */
 
+function sumNumbers (...arr) {
+	return arr.reduce((sum,el) => sum + el, 0)
+}
+
 sumNumbers(1, 3)
 // 4
+console.log(sumNumbers(1, 3))
 
 sumNumbers(10, 20, 5)
 // 35
-
+console.log(sumNumbers(1, 3,2,5,5,5,5,4))
 sumNumbers(2, 5, 80, 1, 10, 12)
 // 110

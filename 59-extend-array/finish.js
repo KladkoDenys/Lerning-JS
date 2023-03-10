@@ -14,21 +14,23 @@
  * как "forEach", "map" также доступны
  */
 
-class ExtendedArray extends Array {
 
+class ExtendedArray extends Array {
 	sum(){
-		return this
-			.filter(el => typeof el === 'number')
-			.reduce((acc,el) => acc + el , 0)
+		this.reduce((sum,el) =>{
+			return sum + el;
+		})
 	}
 
 	onlyNumbers(){
 		return this.filter(el => typeof el === 'number')
 	}
-
 }
 
-const myEx1 = new ExtendedArray('ddd',4,5,5,4,2,'fff');
-console.log(myEx1)
-console.log(myEx1.sum())
+const myExtendedArray = new ExtendedArray(10, 4, 5)
+console.log(myExtendedArray)
 
+console.log(myExtendedArray.sum())
+
+const myExtendedArray2 = new ExtendedArray('abc', 5, true, 25)
+console.log(myExtendedArray2.onlyNumbers())
