@@ -14,7 +14,7 @@
  */
 
 class Fruit {
-  constructor(title, price) {
+  constructor(title, price) { 
     this.title = title
     this.price = price
   }
